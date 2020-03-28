@@ -1,11 +1,11 @@
 print("BeerBarBack\n\nWybierz opcję wpisując numer.\n1.Startuj!\n2.Zamknij.")
 menu = str(input())
-print(menu=='1')
+print(menu =='1')
 if menu == '1':
     print ("Wybierz kolor:\n1.Jasne\n2.Ciemne")
     kolor = input()
     if kolor == 1:
-        print ("dalszy kod")
+        print("dalszy kod")
     elif kolor == 2:
         print("dalszy kod")
     else:
@@ -15,7 +15,7 @@ elif menu == '2':
 else:
     print("Wybierz spośród podanych opcji.")
 
-class Piwo :
+class Piwo:
     def __init__(self, nazwa, gatunek, procent, barwa, aromat):
         self.nazwa = nazwa
         self.gatunek = gatunek
@@ -23,7 +23,7 @@ class Piwo :
         self.barwa = barwa
         self.aromat = aromat
     def tell(self):
-        print("Twoje piwo to: "{}" "{}" "{}" "{}" "{}"".format(self.nazwa, self.gatunek, self.procent, self.barwa, self.aromat))
+        print('Twoje piwo to: "{}" "{}" "{}" "{}" "{}"'.format(self.nazwa, self.gatunek, self.procent, self.barwa, self.aromat))
 
 za = Piwo("Zissou APA", "american pale ale", "5.0%", "jasno-złota", "cytrusy i owoce tropikalne" )
 ji = Piwo("Jungle IPA", "india pale ale", "6.0%", "złota", "orientalne przyprawy, cytrusy i mango" )
