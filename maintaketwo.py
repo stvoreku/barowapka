@@ -26,7 +26,7 @@ def pierwsza_strona():
                     wybor = input()
                     if wybor == '1':
                         szukaj_piwa = input('Wpisz szukaną nazwę piwa: ')
-                        for szukaj_piwa in Piwo:
+                        for szukaj_piwa in Piwo: #Tu nie rozumiem o co chodzi. forma for ... in ... iteruje po elementach na zasadzie >for piwo in wszystkie_piwa<
                             print(szukaj_piwa)
                         druga_strona()
                         break
